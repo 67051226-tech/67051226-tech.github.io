@@ -1,24 +1,75 @@
+/* ตั้งค่าพื้นฐาน */
 body {
-    font-family: 'Sarabun', sans-serif; /* แนะนำให้ใช้ฟอนต์ที่อ่านไทยง่าย */
+    font-family: 'Sarabun', sans-serif;
     text-align: center;
     background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
 }
+
+/* กล่องคอนเทนเนอร์หลัก */
 .container {
     max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
+    margin: 40px auto;
+    padding: 30px;
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 15px; /* มุมโค้งมน */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* เงา */
 }
-img.profile-img {
+
+/* รูปโปรไฟล์ */
+.profile-img {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%; /* ทำให้รูปเป็นวงกลม */
+    border-radius: 50%; /* ทำเป็นวงกลม */
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     margin-bottom: 20px;
 }
+
+/* ส่วนข้อมูลแนะนำตัว (bio) */
+.bio h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.bio h2 {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+/* รายการสาขาวิชา */
 .major-list {
     list-style-type: none; /* เอาจุด bullet ออก */
     padding: 0;
+    margin: 20px 0;
+}
+
+.major-list li {
+    background-color: #eef2f5;
+    color: #444;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* ปุ่ม Action */
+.btn-action {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-action:hover {
+    background-color: #0056b3;
 }
