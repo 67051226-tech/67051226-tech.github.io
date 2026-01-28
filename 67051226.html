@@ -3,23 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suranan Profile</title>
+    <title>แนะนำตัว - Suranan Chompu</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>67051226 สุรนันท์ ชมภู</h1>
-    
-    <img src="S__60260356.jpg" alt="profile" />
-
     <div class="container">
-      <h3>นักศึกษาชั้นปีที่ 2</h3>
-      <p>คณะวิศวกรรมศาสตร์</p>
-      <p>สาขาวิศวกรรมระบบไอโอทีและสารสนเทศ และฟิสิกส์อุตสาหกรรม</p>
+      <img src="S__60260356.jpg" alt="profile" class="profile-img" />
       
-      <br>
-      <button onclick="showAlert()">
-        คลิกเพื่อดู Action
-      </button>
+      <div class="bio">
+        <h1>67051226 Suranan Chompu</h1>
+        <h2>นักศึกษาชั้นปีที่ 2</h2>
+        <p><strong>คณะ:</strong> วิศวกรรมศาสตร์</p>
+        <ul class="major-list">
+            <li>สาขาวิศวกรรมระบบไอโอทีและสารสนเทศ</li>
+            <li>สาขาฟิสิกส์อุตสาหกรรม</li>
+        </ul>
+      </div>
+
+      <button onclick="showAlert()" class="btn-action">Action</button>
     </div>
 
     <script src="script.js"></script>
