@@ -1,30 +1,27 @@
-h1{
-display: block;
-font-size: large;
-font-weight: bold;
-color: brown;
-}
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suranan Profile</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>67051226 สุรนันท์ ชมภู</h1>
+    
+    <img src="S__60260356.jpg" alt="profile" />
 
-body{
-    background-color: antiquewhite;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
+    <div class="container">
+      <h3>นักศึกษาชั้นปีที่ 2</h3>
+      <p>คณะวิศวกรรมศาสตร์</p>
+      <p>สาขาวิศวกรรมระบบไอโอทีและสารสนเทศ และฟิสิกส์อุตสาหกรรม</p>
+      
+      <br>
+      <button onclick="showAlert()">
+        คลิกเพื่อดู Action
+      </button>
+    </div>
 
-img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid black;
-}
-
-button{
-    padding: 12px 25px;
-    font-size: 16px;
-    background-color: coral;
-    color: orange;
-    border: 3px solid black;
-    border-radius: 8px;
-    cursor: pointer;
-}
+    <script src="script.js"></script>
+  </body>
+</html>
