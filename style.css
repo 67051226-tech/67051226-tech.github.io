@@ -1,51 +1,24 @@
 body {
-    background-color: antiquewhite;
+    font-family: 'Sarabun', sans-serif; /* แนะนำให้ใช้ฟอนต์ที่อ่านไทยง่าย */
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    padding-top: 50px; /* เพิ่มพื้นที่ด้านบน */
+    background-color: #f4f4f9;
 }
-
-h1 {
-    display: block;
-    font-size: 2.5rem; /* ปรับขนาดให้เด่นขึ้น */
-    font-weight: bold;
-    color: brown;
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+img.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* ทำให้รูปเป็นวงกลม */
     margin-bottom: 20px;
 }
-
-h3 {
-    color: #5d4037; /* สีน้ำตาลเข้มเข้ากับธีม */
-    margin-top: 20px;
-}
-
-p {
-    font-size: 1.2rem;
-    color: #333;
-}
-
-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid black;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* เพิ่มเงานิดหน่อยให้ดูมีมิติ */
-}
-
-button {
-    margin-top: 20px;
-    padding: 12px 25px;
-    font-size: 1.1rem;
-    background-color: coral;
-    color: white; /* เปลี่ยนจากส้มเป็นขาวเพื่อให้ตัดกับปุ่มและอ่านง่ายขึ้น */
-    border: 3px solid black;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: transform 0.2s; /* เพิ่ม Animation เวลาเอาเมาส์วาง */
-}
-
-button:hover {
-    transform: scale(1.05); /* ปุ่มจะขยายขึ้นเล็กน้อย */
-    background-color: #ff7f50;
+.major-list {
+    list-style-type: none; /* เอาจุด bullet ออก */
+    padding: 0;
 }
