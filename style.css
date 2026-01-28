@@ -1,27 +1,51 @@
-<!doctype html>
-<html lang="th">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suranan Profile</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>67051226 สุรนันท์ ชมภู</h1>
-    
-    <img src="S__60260356.jpg" alt="profile" />
+body {
+    background-color: antiquewhite;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 50px; /* เพิ่มพื้นที่ด้านบน */
+}
 
-    <div class="container">
-      <h3>นักศึกษาชั้นปีที่ 2</h3>
-      <p>คณะวิศวกรรมศาสตร์</p>
-      <p>สาขาวิศวกรรมระบบไอโอทีและสารสนเทศ และฟิสิกส์อุตสาหกรรม</p>
-      
-      <br>
-      <button onclick="showAlert()">
-        คลิกเพื่อดู Action
-      </button>
-    </div>
+h1 {
+    display: block;
+    font-size: 2.5rem; /* ปรับขนาดให้เด่นขึ้น */
+    font-weight: bold;
+    color: brown;
+    margin-bottom: 20px;
+}
 
-    <script src="script.js"></script>
-  </body>
-</html>
+h3 {
+    color: #5d4037; /* สีน้ำตาลเข้มเข้ากับธีม */
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* เพิ่มเงานิดหน่อยให้ดูมีมิติ */
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: coral;
+    color: white; /* เปลี่ยนจากส้มเป็นขาวเพื่อให้ตัดกับปุ่มและอ่านง่ายขึ้น */
+    border: 3px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s; /* เพิ่ม Animation เวลาเอาเมาส์วาง */
+}
+
+button:hover {
+    transform: scale(1.05); /* ปุ่มจะขยายขึ้นเล็กน้อย */
+    background-color: #ff7f50;
+}
